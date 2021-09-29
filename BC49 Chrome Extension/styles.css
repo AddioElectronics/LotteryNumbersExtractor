@@ -1,0 +1,28 @@
+
+.extension-overlay{
+    position: fixed;
+    left: 20px;
+    z-index: 9999;
+}
+
+#export_data{
+    top: 20px;
+}
+
+#import_data{
+    top: 55px;
+}
+
+#file_importer{
+    visibility: hidden;
+}
+
+#autosave{
+    top: 90px;
+}
+
+span.extension-overlay{
+    top: 90px;
+    left: 50px;
+
+}

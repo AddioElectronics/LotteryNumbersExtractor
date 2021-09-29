@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>LottoNumbers.Example</RootNamespace>
+    <AssemblyName>LotteryNumbers.Example</AssemblyName>
+    <Platforms>AnyCPU;x64</Platforms>
+    <Copyright>Addio Electronics</Copyright>
+    <Company>Addio Electronics</Company>
+    <Description>Example for how to use the LotteryNumbersExtractor.</Description>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/AddioElectronics/LotteryNumberExtractor</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AddioElectronics/LotteryNumberExtractor</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>Addio Electronics</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LotteryNumberExtractor\LotteryNumbers.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Resources\BC49_PlayNow.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

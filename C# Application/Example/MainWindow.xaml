@@ -1,0 +1,36 @@
+﻿<Window x:Class="LottoNumbers.Example.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LotteryNumberDisplay"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1635" MinHeight="600" MinWidth="1635" MaxWidth="1635" SizeChanged="Window_SizeChanged">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30px"/>
+            <RowDefinition Height="1*" x:Name="row_Canvas"/>
+            <RowDefinition Height="30px"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Minimum Value :" Grid.Column="1"/>
+            <TextBox x:Name="textBox_MinValue" Grid.Column="2" TextChanged="textBox_MinValue_TextChanged"/>
+            <Label Content="Lottery :" Grid.Column="3"/>
+            <ComboBox x:Name="comboBox_Lottery" Grid.Column="4" SelectedIndex="0" SelectionChanged="ComboBox_SelectionChanged">
+                <ComboBoxItem Content="BC49"/>
+                <ComboBoxItem Content="Lotto649"/>
+            </ComboBox>
+        </Grid>
+        <Canvas x:Name="canvas_NumberFrequency" Grid.Row="1"  />
+        <Label Name="label_Debug"  Grid.Row="2" Grid.Column="0" Content="0%" Panel.ZIndex="2"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <ProgressBar x:Name="progressBar" Height="30"  Grid.Row="2" Grid.Column="0" Panel.ZIndex="1"/>
+    </Grid>
+</Window>

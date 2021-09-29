@@ -1,0 +1,15 @@
+{
+    "name": "BC49 Number Extractor",
+    "description": "Extract the previous winning numbers for BC49",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background" : {
+      "service_worker" : "background.js"
+    },
+    "permissions": ["storage"],
+    "content_scripts": [{
+      "css": ["styles.css"],
+      "js": ["jquery-3.6.0.min.js", "content.js"],
+      "matches": ["https://www.lotteryleaf.com/bc/bc-49/*"]
+    }]
+  }

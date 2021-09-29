@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>LottoNumbers.Example</RootNamespace>
+    <AssemblyName>LotteryNumbers.Example</AssemblyName>
+    <Platforms>AnyCPU;x64</Platforms>
+    <Authors>Addio Electronics</Authors>
+    <Description>Example for how to use LotteryNumbersExtractor</Description>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/AddioElectronics/LotteryNumberExtractor</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/AddioElectronics/LotteryNumberExtractor</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LotteryNumberExtractor\LotteryNumbersExtractor.csproj" />
+  </ItemGroup>
+
+</Project>
