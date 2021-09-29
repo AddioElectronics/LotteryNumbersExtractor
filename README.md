@@ -2,6 +2,7 @@
  `
 Free for personal and/or scientific use. Licensing available for Commercial use.
 `
+
  A C# (Library and Application) or Javascript (Chrome Extension) implementation that extracts previous winning lottery numbers from a website's records. 
  
  *Started as a side project/excercise to see if I could find any patterns in their random number generators. I quickly realized its never going to happen, so I decided to finish the library to publish on github. Just to try and salvage any wasted time. 
